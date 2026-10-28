@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo 3 - Banco de Energia</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f6f8; color: #222; }
+        h1 { color: #1b4332; }
+        ul { background: #fff; padding: 15px 15px 15px 35px; border-left: 4px solid #40916c; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<h1>Trabajo 3 - Banco de Energia</h1>
+
+<ul>
+    <li th:each="linea : ${resultado}" th:text="${linea}">linea</li>
+</ul>
+
+</body>
+</html>
